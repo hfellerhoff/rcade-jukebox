@@ -19,6 +19,12 @@ export const songs = [
     src: "all-star-trio_12th-street-rag.mp3",
   },
   {
+    id: 102,
+    name: "Trapped",
+    artist: "Boards of Canada",
+    src: "boc-trapped.mp3",
+  },
+  {
     id: 115,
     name: "Doorbell",
     artist: "Doors (the object)",
