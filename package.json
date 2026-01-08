@@ -1,0 +1,23 @@
+{
+  "name": "rcade-jukebox",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A retro-inspired jukebox. Add your own songs on GitHub!",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite --port 5173 --strictPort\" \"rcade dev http://localhost:5173\"",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "rcade": "^0.0.41",
+    "solid-js": "^1.9.10",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-solid": "^2.11.10"
+  },
+  "dependencies": {
+    "@rcade/plugin-input-classic": "^0.2.1",
+    "clsx": "^2.1.1"
+  }
+}

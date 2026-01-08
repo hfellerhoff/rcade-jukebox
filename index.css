@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --width: 336px;
+    --height: 262px;
+
+    --height-controls: 32px;
+
+    --color-jukebox-bright-glow: #ff8605;
+    --color-jukebox-glow: #ff6a00bb;
+    --color-jukebox-muted-glow: #8a4307;
+    --color-jukebox-controls-background: #716657;
+    --color-jukebox-button: #d69f9a;
+}
+
+html,
+body {
+    width: var(--width);
+    height: var(--height);
+    overflow: hidden;
+    /*background-color: #1a1a2e;*/
+    /*color: #eee;*/
+    background: white;
+    font-family: system-ui, sans-serif;
+}
+
+main {
+    width: var(--width);
+    height: var(--height);
+}
+
+#jukebox-border {
+    border: 8px solid black;
+    height: calc(var(--height) - var(--height-controls));
+}
+
+#jukebox-main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--color-jukebox-muted-glow);
+}
+
+.slot {
+    background: var(--color-jukebox-glow);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: background 0.3s;
+}
+
+.slot-playing {
+    background: var(--color-jukebox-bright-glow);
+}
+
+.slot-title {
+    font-size: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc((var(--width) - 64px) / 2);
+}
+.slot-artist {
+    font-size: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc((var(--width) - 64px) / 2);
+}
+
+.selected-button {
+    outline: 2px solid white;
+}
+
+#jukebox-controls-display {
+    background: black;
+    width: 35px;
+    font-family: monospace;
+    height: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-inline: 2px;
+}
+
+#jukebox-controls {
+    background: var(--color-jukebox-controls-background);
+    height: var(--height-controls);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+#jukebox-controls > button {
+    background: var(--color-jukebox-button);
+    font-family: monospace;
+    border: none;
+    padding-inline: 2px;
+}
+
+.number-button {
+    height: 18px;
+}
+
+.text-button {
+    height: 18px;
+}

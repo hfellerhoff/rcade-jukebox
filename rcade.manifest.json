@@ -1,0 +1,18 @@
+{
+  "$schema": "https://rcade.dev/manifest.schema.json",
+  "name": "rcade-jukebox",
+  "display_name": "Jukebox",
+  "description": "A retro-inspired jukebox. Add your own songs on GitHub!",
+  "visibility": "public",
+  "authors": [
+    {
+      "display_name": "Henry Fellerhoff"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "@rcade/input-classic",
+      "version": "1.0.0"
+    }
+  ]
+}
