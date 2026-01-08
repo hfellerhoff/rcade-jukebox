@@ -1,6 +1,16 @@
 # Jukebox
 
-A retro-inspired jukebox. Add your own songs on GitHub!
+A retro-inspired jukebox, built for the Recurse Center's RCade.
+
+## Adding songs
+
+There are currently only 16 slots, so get them while they're hot!
+
+1. Add your song to the `/public` folder
+2. Add your metadata to [songs.ts](https://github.com/hfellerhoff/rcade-jukebox/blob/main/src/songs.ts)
+3. Make a pull request
+
+---
 
 ## About RCade
 
