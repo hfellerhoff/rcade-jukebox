@@ -3,7 +3,7 @@
   "name": "rcade-jukebox",
   "display_name": "Jukebox",
   "description": "A retro-inspired jukebox. Add your own songs on GitHub!",
-  "visibility": "public",
+  "visibility": "internal",
   "authors": [
     {
       "display_name": "Henry Fellerhoff"
